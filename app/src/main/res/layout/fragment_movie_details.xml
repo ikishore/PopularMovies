@@ -1,0 +1,122 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="udacity.kishore.popularmovies.ui.MovieDetailsFragment"
+        android:background="@android:color/background_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Movie Title"
+            android:id="@+id/movie_title"
+            android:layout_gravity="left|top"
+            android:background="#128870"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:textColor="#f7f1f1"
+            android:clickable="true"
+            android:contextClickable="false"
+            android:paddingLeft="@dimen/movie_details_left_margin" />
+
+        <ImageView
+            android:layout_width="@dimen/movie_details_img_width"
+            android:layout_height="@dimen/movie_details_img_height"
+            android:id="@+id/movie_poster"
+            android:layout_gravity="left|center_vertical"
+            android:layout_below="@+id/movie_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/movie_details_left_margin" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/movie_title"
+            android:layout_toEndOf="@+id/movie_poster"
+            android:layout_alignBottom="@+id/movie_poster"
+            android:layout_marginLeft="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/release_date_icon"
+                    android:src="@drawable/ic_event_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Release date"
+                    android:id="@+id/release_date"
+                    android:layout_gravity="left"
+                    android:layout_toEndOf="@id/release_date_icon"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/vote_avg_icon"
+                    android:src="@drawable/btn_star_on_normal_holo_light"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Vote average"
+                    android:id="@+id/vote_average"
+                    android:layout_gravity="left"
+                    android:layout_toEndOf="@id/vote_avg_icon"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/voters_count_icon"
+                    android:src="@drawable/ic_account_circle_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Count"
+                    android:layout_gravity="left"
+                    android:id="@+id/voters_count"
+                    android:layout_toEndOf="@id/voters_count_icon"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Overview"
+            android:id="@+id/overview"
+            android:layout_below="@+id/movie_poster"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="@dimen/movie_details_left_margin" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="grid_movies_item_width">210dp</dimen>
+    <dimen name="grid_movies_item_height">260dp</dimen>
+    <dimen name="movie_details_img_width">210dp</dimen>
+    <dimen name="movie_details_img_height">260dp</dimen>
+    <dimen name="movie_details_left_margin">20dp</dimen>
+</resources>

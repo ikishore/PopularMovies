@@ -1,0 +1,13 @@
+<resources>
+    <string name="title_activity_initialization">Popular Movies</string>
+    <string name="app_name">Popular Movies</string>
+    <string name="title_activity_movie_details">Movie details</string>
+    <string name="action_sort_preference">Sort by</string>
+
+    <!-- String used in Sort preference fragment -->
+    <string name="action_cancel">Cancel</string>
+    <string name="sort_by_popularity">Most popular</string>
+    <string name="sort_by_highest_rating">Highest rated</string>
+
+    <string name="error_no_data_cnxn">Failed to connect!, Please check network settings and try again.</string>
+</resources>
